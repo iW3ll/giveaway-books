@@ -1,6 +1,6 @@
 import S from './doados.module.scss'
 import livro from '../../assets/livro.png'
-import hpCameraSecret from '../../assets/hp_CameraSecret.png'
+import hpcsecret from '../../assets/hpcsecret.png'
 
 
 export default function Doados(){
@@ -18,9 +18,9 @@ export default function Doados(){
                     
                 </article>
                 <article>
-                    <img src={hpCameraSecret} alt="imagem de um livro que se chama harry potter e a camera secreta" />
+                    <img src={hpcsecret} alt="imagem de um livro que se chama harry potter e a camera secreta" />
                     
-                    <h3>Harry Potter e a câmera secreta</h3>
+                    <h3>Harry Potter e a Câmera Secreta</h3>
                     <p>J. K. Rowling</p>
                     <p>Aventura</p>
                     

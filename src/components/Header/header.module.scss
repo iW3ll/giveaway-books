@@ -9,8 +9,6 @@ header{
 }
 
 .boxLogo{
-    
-  
   width: 23vw;
   display: flex;
   align-items: center;
@@ -23,8 +21,7 @@ header{
   }
 }
 
-.boxMenu{
-    
+.boxMenu{ 
     width: 35vw;
     ul{
         display: flex;
@@ -52,11 +49,82 @@ header{
 .boxInput{
   border: none;  
   outline: none;
+  width: 13vw;
   background-color: transparent;
   padding-left: 18px;
   color: white;
   font-size: 17px;
   &::placeholder{
     color: white;
+  
   }
+}
+
+@media(max-width: 1170px){
+    .boxLogo{
+      // border: solid 2px red;
+      h1{
+        font-size: 1.7vw;
+      }
+      img{
+        width: 5vw;
+      }
+    }
+
+    .boxMenu{
+    //  border: solid 2px yellow;
+     ul{
+      font-size: 1.6vw;
+     }
+    }
+
+   .boxSearch{
+    width: 20vw;
+   } 
+   .boxInput{
+    width: 16vw;
+    &::placeholder{
+      font-size: 1.3vw;
+    }
+   }
+}
+
+@media(max-width: 760px){
+
+  header{
+    height: 25vh;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .boxSearch{
+   display: none;
+  }
+
+  .boxLogo{
+    width: 100%;
+    justify-content: space-evenly;
+    h1{
+      font-size: 28px;
+    }
+    img{
+      width: 50px;
+    }
+  }
+
+  .boxMenu{
+    width: 100%;
+    ul{
+      font-size: 22px;
+      justify-content: space-around;
+    }
+  }
+}
+
+@media(max-width: 380px){
+      .boxMenu{
+        ul{
+          font-size: 18px;
+        }
+      }
 }
